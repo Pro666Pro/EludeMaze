@@ -1,4 +1,4 @@
-local GameName = "Nexer Hub - Slap Battles 👏"
+local GameName = "Nexer Hub - Elude Maze 👏"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({IntroText = "Nexer Hub 👏", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
