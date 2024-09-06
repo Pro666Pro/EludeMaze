@@ -1,7 +1,7 @@
-local GameName = "Nexer Hub - Elude Maze 👏"
+local GameName = "Elude Maze 👏"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({IntroText = "Nexer Hub 👏", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
+local Window = OrionLib:MakeWindow({IntroText = "Elude Maze 👏", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
 
 OrionLib:MakeNotification({Name = "Warning",Content = "Use at your own risk.",Image = "rbxassetid://7733658504",Time = 5})
 
@@ -36,7 +36,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-	Name = "Get Counter + Elude",
+	Name = "Auto Get Counter + Elude",
 	Callback = function()
 Time = 121
 fireclickdetector(game.Workspace.CounterLever.ClickDetector)
@@ -58,4 +58,56 @@ fireclickdetector(v)
 end
 end
   	end    
+})
+
+local Teleport = Window:MakeTab({
+	Name = "Teleport",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Tp = Teleport:AddSection({
+	Name = "teleport"
+})
+
+Tp:AddButton({
+	Name = "Teleport Get Elude Glove",
+	Callback = function()
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-502.0026550292969, 4.40000057220459, -142.7523651123047)
+	 end
+})
+
+Tp:AddButton({
+	Name = "Teleport Get Alchemist Hood Artifact",
+	Callback = function()
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-53.19437789916992, 3.1999995708465576, -37.72947311401367)
+	 end
+})
+
+Tp:AddButton({
+	Name = "Teleport Get First Artifact",
+	Callback = function()
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(223.61134338378906, 3.200000047683716, 83.69230651855469)
+	 end
+})
+
+Tp:AddButton({
+	Name = "Teleport Get Second Artifact",
+	Callback = function()
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-199.0915985107422, 3.200000047683716, -129.43972778320312)
+	 end
+})
+
+Tp:AddButton({
+	Name = "Teleport Get Third Artifact",
+	Callback = function()
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(84.27069854736328, 3.200000047683716, -207.86036682128906)
+	 end
+})
+
+Tp:AddButton({
+	Name = "Teleport Get Fourth Artifact",
+	Callback = function()
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(111.54388427734375, 3.200000047683716, 194.86898803710938)
+	 end
 })
